@@ -37,7 +37,8 @@ class SpectraChart(QChart):
             self.addSeries(series)
             series.attachAxis(self.axisX())
             series.attachAxis(self.axisY())
-        self.focusPulse(0)
+        if len(self.series()) > 0:
+            self.focusPulse(0)
 
     def focusChanged(self, focus):
         self.focus = focus

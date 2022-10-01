@@ -250,7 +250,7 @@ class NexusProcessing:
         self.outputDir = ""
         self.sample = None
         self.useTempDataFileDir = False
-        self.interpolate = False
+        self.interpolate = True
         self.tmp = tempfile.TemporaryDirectory()
         self.path = "modex.cfg"
         self.goodFrameThreshold = 0
